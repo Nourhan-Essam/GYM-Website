@@ -1,23 +1,58 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root{
-    --txt-color: #FFFFFF;
+    --txt-color: #5C677D;
 }
 body{
-    background: #F0F4F8;
+    background: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+    margin: 0;
 }
 .main-header
 {
   display: flex;
-  background-color: #001233;
-  height: 100px;
+  background-color: #7D8597;
+  height: 200px;
   justify-content: center;
   align-items: flex-end;
   padding: 0 50px 20px 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+}
+.hero{
+  height: 100vh;
+  background-image: url(https://template.canva.com/EAE7rpHi2uc/1/0/1600w-sgLnnLb1ecc.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+.guides-txt{
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+  color: var(--txt-color);
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.main-footer{
+  display: flex;
+  background:#001233;
+  color: white;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px 0;
 }
 .nav-links a{
   color: #FFFFFF;
@@ -35,7 +70,7 @@ body{
 h1{ 
   text-align: center;
   text-decoration: underline;
-  margin: 16px;
+  margin: 20px;
   color: #5C677D;
 }
 .categories{
@@ -61,7 +96,8 @@ h1{
   box-shadow: 0 4px 12px rgba(4, 102, 200, 0.3);
   transform: translateY(-2px);
 }
-.add-button{
+
+.download-button{
   background-color: #F0F4F8;
     color: #001233;
     border: 1px solid #7D8597;
@@ -69,6 +105,26 @@ h1{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 10px;
+}
+.download-button:hover{
+background-color: #0466C8;
+  color: white;
+  box-shadow: 0 4px 12px rgba(4, 102, 200, 0.3);
+  transform: translateY(-2px);
+}
+.program-plans{
+  margin-top: 15px;
+}
+.rows{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.rows span:last-child{
+  font-weight: bold;
 }
 .page {
   max-width: var(--maxw);
@@ -82,10 +138,12 @@ h1{
   /* Columns produce the "waterfall" effect */
   column-count: 3;
   column-gap: var(--gap);
+  background: white;
+  padding: 60px 40px;
 }
 .card {
   break-inside: avoid; /* key line for masonry cards */
-  background: #003366;
+  background: #0353A4;
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -93,7 +151,7 @@ h1{
   overflow: hidden;
   transform: translateZ(0); /* improves rendering on some GPUs */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  color: var(--txt-color);
+  color: #FFFFFF;
 }
 .card:hover {
   transform: translateY(-6px);
@@ -158,4 +216,43 @@ a:focus-visible {
   outline: 3px solid rgba(5, 150, 105, 0.35);
   outline-offset: 2px;
   border-radius: 10px;
+}
+
+.about-content-wrapper {
+    width: 100%;
+    background-image: url('Grey Simple Photo Quote Workout Gym Zoom Virtual Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    color: white; 
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+
+.about-text-box {
+    background: white; 
+    padding: 40px;
+    border-radius: 10px; 
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text-box h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.about-text-box p {
+    color: #555;
+    line-height: 1.6;
 }

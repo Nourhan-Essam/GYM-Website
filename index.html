@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supplements.css">
 </head>
 <body>
     <header class="main-header">
@@ -12,68 +13,155 @@
       <nav class="nav-links">
         <a href="#">Home</a>
         <a href="#">Shop</a>
-        <a href="#">Nutrition</a>
+        <a href="Nutrition/nutrition.html">Nutrition</a>
         <a href="#">Guides</a>
         <a href="#">Contact</a>
+         <!-- <span class="cart">
+        🛒
+      </span> -->
       </nav>
     </header>
-    <h1>SHOP</h1>
+
+<div class="about-content-wrapper">
+        <h1 class="about-title">About Us</h1>
+        
+       
+            <h2>Build Your Legacy</h2>
+            <p>
+                Welcome to GYM NAME. We provide premium supplements, equipment, 
+                and gear for athletes who refuse to settle for anything less than extraordinary.
+            </p>
+        
+    </div>
+
+   <h1>SHOP</h1>
     <div class="categories">
-    <button>SUPPLEMENTS</button>
-    <button>EQUIPMENT</button>
-    <button>APPAREL</button>
-    <button>ACCESORIES</button>
+    <button onclick=" GoToSupplements()">SUPPLEMENTS</button>
+    <button onclick="GoToEquipments()">EQUIPMENT</button>
+    <button onclick="GoToAppareal()">APPAREL</button>
+    <button onclick="GoToAccessories()">ACCESORIES</button>
     </div>
     <main class="page">
-    <section class="masonry" aria-label="Masonry gallery">
-          <!-- Repeatable card pattern:
-           .card
-             figure.card-figure
-               img.thumb
-               small.ribbon (optional)
-             .pad (text)
-      -->
-
-          <!-- A1 -->
+      <div class="guides-txt">
+        <h2>TRAINING GUIDES</h2>
+        <P>Expert-designed workout programs to help you reach your fitness goals, whereever you train.</P>
+      </div>
+     <section class="masonry" aria-label="Masonry gallery">
           <article class="card">
             <figure class="card-figure">
-              <img>
             </figure>
             <div class="pad">
-              <h3 class="title">Whey Protein Isolate</h3>
+              <i class="fa-solid fa-dumbbell"></i>
+              <h3 class="title">GYM PRO</h3>
               <p class="lede">
-                ★ ★ ★ ★ ★
+                Advanced split training with progressive overload. Maximize muscle hypertrophy with professional techniques.
               </p>
-              <div class="meta"><span>$50</span><button class="add-button">ADD</button></div>
+              <h6>Program Analysis</h6>
+              <div class="program-plans">
+                <div class="rows">
+                  <span>Workout Type</span>
+                  <span>Bodyweight</span>
+                </div>
+
+                <div class="rows">
+                  <span>Weekly Hours</span>
+                  <span>4-5 hrs</span>
+                </div>
+
+                <div class="rows">
+                  <span>Difficulty</span>
+                  <span>Beginner</span>
+                </div>
+
+                <div class="rows">
+                  <span>Target</span>
+                  <span>Full Body</span>
+                </div>
+              </div>
+              <div class="meta"><span>$50</span><button class="download-button">Download Schedule</button></div>
             </div>
           </article>
 
           <article class="card">
             <figure class="card-figure">
-              <img>
             </figure>
             <div class="pad">
-              <h3 class="title">Whey Protein Isolate</h3>
+              <i class="fa-solid fa-house"></i>
+              <h3 class="title">HOME WORKOUT</h3>
               <p class="lede">
-                ★ ★ ★ ★ ★
+                No equipment needed. Build strength and endurance with bodyweight exercises designed for home training.
               </p>
-              <div class="meta"><span>$50</span><button class="add-button">ADD</button></div>
+              <h6>Program Analysis</h6>
+              <div class="program-plans">
+                <div class="rows">
+                  <span>Workout Type</span>
+                  <span>Bodyweight</span>
+                </div>
+
+                <div class="rows">
+                  <span>Weekly Hours</span>
+                  <span>4-5 hrs</span>
+                </div>
+
+                <div class="rows">
+                  <span>Difficulty</span>
+                  <span>Beginner</span>
+                </div>
+
+                <div class="rows">
+                  <span>Target</span>
+                  <span>Full Body</span>
+                </div>
+              </div>
+              <div class="meta"><span>$50</span><button class="download-button">Download Schedule</button></div>
             </div>
           </article>
 
           <article class="card">
             <figure class="card-figure">
-              <img>
             </figure>
             <div class="pad">
-              <h3 class="title">Whey Protein Isolate</h3>
+           <i class="fa-solid fa-person"></i>
+              <h3 class="title">HOME WORKOUT</h3>
               <p class="lede">
-                ★ ★ ★ ★ ★
+                No equipment needed. Build strength and endurance with bodyweight exercises designed for home training.
               </p>
-              <div class="meta"><span>$50</span><button class="add-button">ADD</button></div>
+              <h6>Program Analysis</h6>
+              <div class="program-plans">
+                <div class="rows">
+                  <span>Workout Type</span>
+                  <span>Bodyweight</span>
+                </div>
+
+                <div class="rows">
+                  <span>Weekly Hours</span>
+                  <span>4-5 hrs</span>
+                </div>
+
+                <div class="rows">
+                  <span>Difficulty</span>
+                  <span>Beginner</span>
+                </div>
+
+                <div class="rows">
+                  <span>Target</span>
+                  <span>Full Body</span>
+                </div>
+              </div>
+              <div class="meta"><span>$50</span><button class="download-button">Download Schedule</button></div>
             </div>
           </article>
+
+          
           </section>
+
+          <footer>
+            <div class="main-footer">
+            <p>About us | Contact</p>
+            <p>&copy; 2026 GYM NAME</p>
+        </div>
+      </footer>
           </main>
+          <script src="main.js"></script>
 </body>
-</html>
+</html> 
